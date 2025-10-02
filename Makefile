@@ -27,7 +27,7 @@ mac:
 cmd:
 	mkdir -p build/cli
 	swiftc -O -parse-as-library ./whereami/LocationModels.swift ./whereami/MacLocationClient.swift ./CLI/main.swift -framework CoreBluetooth -module-cache-path $(DERIVED_DIR)/CLI-ModuleCache -o build/cli/whereami-cli
-	codesign --force --options runtime --sign - --entitlements whereami/whereami.entitlements build/cli/whereami-cli
+	codesign --force --sign - --entitlements CLI/cli.entitlements build/cli/whereami-cli
 
 clean:
 	xcodebuild -project $(PROJECT) -scheme $(SCHEME) -configuration $(CONFIG) -derivedDataPath $(DERIVED_DIR) clean
