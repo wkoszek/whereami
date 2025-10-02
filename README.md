@@ -17,6 +17,10 @@ The same codebase is used to run on both platforms.
 
 This is R&D project, and is 100% vibe-coded with the LLM.
 
+The same functionality could perhaps be accomplished by creating the iOS
+Shortcut where GPS location is fetched, put into a file, and the file is
+somehow transferred via Bluetooth to Mac.
+
 ## Testing
 
 Both devices must have the app installed.
