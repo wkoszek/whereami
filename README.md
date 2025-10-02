@@ -1,14 +1,13 @@
 # WhereAmI: Send GPS location from iOS to macOS
 
 WhereAmI sends GPS location from iOS to macOS.
-It uses Bluetooth for it.
-App must be opened on both devices for the exchange to work.
-For the app to work iPhone and Macbook are within the Bluetooth range.
-The iOS in this setup acts as the BLE perhipheral.
+The app must be opened on both devices, and because Bluetooth
+is used to pass the GPS location from iPhone to Macbook,
+both devices must be in its Bluetooth range.
 
-The purpose is to allow the Macbook to be offline (perhaps during cruise/travel),
-but be able to get the physical location taking field notes with accurate
-location.
+WhereAmI is an experiment to prove that it's possible to have offline
+Macbook (perhaps during cruise/travel), but with some way of getting 
+GPS coordinates (useful for taking field notes with accurate location).
 
 WhereAmI is a universal Swift app that works on macOS and iOS.
 For macOS, the two versions are provided: GUI and Command Line Interface (CLI)
