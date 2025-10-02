@@ -71,7 +71,7 @@ final class BLELocationClient: NSObject {
     }
 
     private func log(_ message: String) {
-        print("[BLELocationClient] \(message)")
+        fputs("[BLELocationClient] \(message)\n", stderr)
     }
 
     func requestLocation() async throws -> LocationSample {
